@@ -54,7 +54,7 @@ public class Bot extends ListenerAdapter {
 
 
     public static void main(String[] args) throws LoginException, InterruptedException {
-        jda = JDABuilder.createDefault("").addEventListeners(new Bot()).setActivity(Activity.playing("with Cubes for you")).setStatus(OnlineStatus.DO_NOT_DISTURB).build();
+        jda = JDABuilder.createDefault("OTE5MzIxNTcxOTM0NDg2NTM5.YbUG7g.REXmYTkI0F6HZ0NiDXZNAIIXOf0").addEventListeners(new Bot()).setActivity(Activity.playing("with Cubes for you")).setStatus(OnlineStatus.DO_NOT_DISTURB).build();
         jda.awaitReady();
         jda.addEventListener(new Commands());
         jda.addEventListener(new Timing());
@@ -557,7 +557,7 @@ public class Bot extends ListenerAdapter {
   
     public void support(SlashCommandEvent event, String text) {
         event.reply("Feedback Sent!").setEphemeral(true).queue();
-        jda.openPrivateChannelById('').complete().sendMessage(text).complete() ;
+        jda.openPrivateChannelById('919324192938287124').complete().sendMessage(text).complete() ;
     }
 
     public void help(SlashCommandEvent event) {
